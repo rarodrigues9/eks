@@ -15,7 +15,7 @@ aws configure
 
 mkdir -p $HOME/.aws/bin
 
-curl -o aws-iam-authenticator https://s3.us-west-2.amazonaws.com/amazon-eks/1.21.2/2021-07-05/bin/linux/arm64/aws-iam-authenticator && chmod +x aws-iam-authenticator && mv aws-iam-authenticator $HOME/.aws/bin && export PATH=$PATH:$HOME/.aws/bin && echo 'export PATH=$PATH:$HOME/.aws/bin' >> ~/.bashrc
+curl -o aws-iam-authenticator https://s3.us-west-2.amazonaws.com/amazon-eks/1.21.2/2021-07-05/bin/linux/amd64/aws-iam-authenticator && chmod +x aws-iam-authenticator && mv aws-iam-authenticator $HOME/.aws/bin && export PATH=$PATH:$HOME/.aws/bin && echo 'export PATH=$PATH:$HOME/.aws/bin' >> ~/.bashrc
 
 ### Instalar kubectl (user)
 
