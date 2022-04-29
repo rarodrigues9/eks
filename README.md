@@ -1,9 +1,9 @@
-## Acesso ao AWS EKS via kubectl local
+# Acesso ao AWS EKS via kubectl local
 
-# Instalar aws-cli (sudo ou root)
+- Instalar aws-cli (sudo ou root)
 pip3 install awscli
 
-# Caso não tenha pip3, instalar:
+- Caso não tenha pip3, instalar:
 apt|yum install python3-pip
 
 # Configurar credenciais AWS
