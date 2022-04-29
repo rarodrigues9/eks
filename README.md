@@ -26,10 +26,13 @@ mkdir $HOME/.kube && touch $HOME/.kube/config && export PATH=$PATH:$HOME/.kube &
 
 ### Levantamento de informações do cluster EKS
 
--aws eks list-clusters
--aws eks describe-cluster --name CLUSTER
--aws sts get-caller-identity
+aws eks list-clusters
 
--aws eks update-kubeconfig --region REGIÃO --name CLUSTER-NOME
+aws eks describe-cluster --name CLUSTER
 
--aws eks update-kubeconfig --region REGIÃO --name CLUSTER-NOME --role-arn arn:aws:iam::XXXXXXXXXXXX:role/testrole
+aws sts get-caller-identity
+
+
+aws eks update-kubeconfig --region REGIÃO --name CLUSTER-NOME
+
+aws eks update-kubeconfig --region REGIÃO --name CLUSTER-NOME --role-arn arn:aws:iam::XXXXXXXXXXXX:role/testrole
